@@ -7,11 +7,12 @@ INFORMATIONEN ZUM ZITIERSTIL
 ================================================================================
 -->
  <info>
-    <title>Zeitschrift für digitale Geisteswissenschaften</title>
+    <title>Zeitschrift-fuer-digitale-Geisteswissenschaften</title>
     <title-short>ZfdG</title-short>
     <!-- hier zoterodaten ergänzen -->
     <id>http://www.zotero.org/styles/zfdg</id>
     <link href="http://www.zotero.org/styles/zfdg" rel="self"/>
+    <link href="http://www.zotero.org/styles/chicago-note-bibliography" rel="template"/>
     <!-- URI of the style from which the current style is derived -->   
     <link href="http://www.zfdg.de/s-wie-style" rel="documentation"/>
     <author>
@@ -127,12 +128,14 @@ INFORMATIONEN ZUM ZITIERSTIL
       <name delimiter=" / " delimiter-precedes-last="always"/>
     </names>
   </macro>
+    <!--
   <macro name="translatedby">
     <names variable="translator">
       <label form="verb-short" text-case="lowercase" suffix=". "/>
       <name delimiter=", " delimiter-precedes-last="always"/>
     </names>
   </macro>
+  -->
   <macro name="editor">
     <names variable="editor">
       <label form="verb-short"  prefix=". " suffix=" "/>
@@ -183,6 +186,7 @@ INFORMATIONEN ZUM ZITIERSTIL
       <text prefix=" / " macro="secondary-contributors"/>
     </group>
   </macro>
+    <!--
   <macro name="title-short">
     <group delimiter=". ">
       <choose>
@@ -195,6 +199,7 @@ INFORMATIONEN ZUM ZITIERSTIL
       </choose>
     </group>
   </macro>
+  -->
   <macro name="container">
     <choose>
       <if type="post-weblog">
@@ -222,6 +227,7 @@ INFORMATIONEN ZUM ZITIERSTIL
       </else-if>
     </choose>
   </macro>
+    <!--
   <macro name="collection">
     <text variable="collection-title"/>
     <choose>
@@ -241,6 +247,7 @@ INFORMATIONEN ZUM ZITIERSTIL
       </if>
     </choose>
   </macro>
+  -->
   <macro name="edition">
     <choose>
       <if is-numeric="edition">
@@ -336,7 +343,7 @@ INFORMATIONEN ZUM ZITIERSTIL
   <macro name="citation-locator">
     <text variable="locator"/>
   </macro>
-  <citation et-al-min="3" et-al-use-first="1" et-al-subsequent-min="1" et-al-subsequent-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year" givenname-disambiguation-rule="primary-name">
+  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year" givenname-disambiguation-rule="primary-name">
     <sort>
       <key variable="citation-number"/>
     </sort>
