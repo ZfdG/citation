@@ -41,9 +41,9 @@ INFORMATIONEN ZUM ZITIERSTIL
     <terms>
       <term name="et-al">et al.</term>
     <!--  <term name="accessed">gesehen am</term>-->
-      <term name="editor" form="short">Hg</term>
+      <term name="editor" form="short">Hg.</term>
       <term name="editor" form="verb-short">Hg.&#160;von</term>
-      <term name="translator" form="short">Übers</term>
+      <term name="translator" form="short">Übers.</term>
       <term name="edition" form="short">Auflage</term>
       <term name="translator" form="verb-short">Übers.&#160;v</term>
       <term name="volume" form="long">Bde.</term>
@@ -71,7 +71,7 @@ INFORMATIONEN ZUM ZITIERSTIL
           <if type="book">
             <names variable="editor">
               <name form="short" delimiter=" / "  delimiter-precedes-last="always"/>
-              <label prefix=" (" form="short" suffix=".)"/>
+              <label prefix=" (" form="short""/>
             </names>
           </if>
         </choose>
@@ -82,7 +82,7 @@ INFORMATIONEN ZUM ZITIERSTIL
     <choose>
       <if variable="author" type="book" match="all">
         <names variable="editor" delimiter=" / ">
-          <label form="verb-short" text-case="lowercase" suffix=". "/>
+          <label form="verb-short" text-case="lowercase"/>
           <name delimiter=", " delimiter-precedes-last="always"/>
         </names>
       </if>
@@ -111,13 +111,13 @@ INFORMATIONEN ZUM ZITIERSTIL
     <choose>
       <if variable="container-author" type="chapter" match="all">
         <names variable="editor">
-          <label form="verb-short" text-case="lowercase" suffix=". "/>
+          <label form="verb-short" text-case="lowercase"/>
           <name delimiter=", " delimiter-precedes-last="always"/>
         </names>
       </if>
       <else-if type="article-journal article-magazine" match="any">
         <names variable="editor">
-          <label form="verb-short" text-case="lowercase" suffix=". "/>
+          <label form="verb-short" text-case="lowercase"/>
           <name delimiter=" /" delimiter-precedes-last="always"/>
         </names>
       </else-if>
